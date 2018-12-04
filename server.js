@@ -33,7 +33,7 @@ app.get('/scrape', function(req, res) {
     }
 
     //fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
-      console.log(`Scrapping ends! ${json}`);
+      console.log(`Scrapping ends! ${JSON.stringify(json)}`);
     //})
 
     res.send('Check your console!')
